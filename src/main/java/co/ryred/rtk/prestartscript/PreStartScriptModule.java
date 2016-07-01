@@ -57,7 +57,7 @@ public class PreStartScriptModule extends Module {
 	protected void onEnable() {
 
 		String command = "bash starting.sh";
-		if( System.getProperty( "RTKStartupCommand" ) != null ) {
+		if ( System.getProperty( "RTKStartupCommand" ) != null ) {
 			command = System.getProperty( "RTKStartupCommand" );
 		}
 
@@ -70,8 +70,8 @@ public class PreStartScriptModule extends Module {
 
 			BufferedReader br = new BufferedReader( new InputStreamReader( proc.getInputStream() ) );
 			String line;
-			while ((line = br.readLine()) != null) {
-				System.out.println( "{OUT} " + line);
+			while ( (line = br.readLine()) != null ) {
+				System.out.println( "{OUT} " + line );
 			}
 
 			System.out.println( "Exit status: " + proc.waitFor() );
@@ -86,7 +86,6 @@ public class PreStartScriptModule extends Module {
 	protected void onDisable() {
 
 	}
-
 
 
 }

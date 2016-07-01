@@ -1,0 +1,4 @@
+name:RTKPreStartScript
+main:co.ryred.rtk.prestartscript.PreStartScriptModule
+version:${pom.version}
+author:Cory Redmond

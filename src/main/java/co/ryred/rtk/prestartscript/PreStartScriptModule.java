@@ -50,7 +50,7 @@ import java.io.InputStreamReader;
 public class PreStartScriptModule extends Module {
 
 	public PreStartScriptModule( ModuleMetadata moduleMetadata, ModuleLoader moduleLoader, ClassLoader classLoader ) {
-		super( moduleMetadata, moduleLoader, classLoader, ToolkitEvent.ON_SERVER_RESTART, ToolkitEvent.ON_SERVER_HOLD );
+		super( moduleMetadata, moduleLoader, classLoader, ToolkitEvent.ON_SERVER_RESTART, ToolkitEvent.ON_SERVER_START );
 	}
 
 	@Override
